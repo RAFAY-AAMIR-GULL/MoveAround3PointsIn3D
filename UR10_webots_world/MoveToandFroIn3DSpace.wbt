@@ -1,0 +1,41 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/shapes/protos/TexturedBoxShape.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/universal_robots/protos/UR10e.proto"
+
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.6922851097611552 -0.29763258562043804 -0.6573858614085627 1.6681452221651205
+  position -4.25661953768595 4.682341188983153 -5.313481295083637
+}
+RectangleArena {
+  translation 0 -0.03 0
+  floorSize 30 30
+  floorAppearance Parquetry {
+    colorOverride 1 0 1
+  }
+  wallAppearance BrushedAluminium {
+    colorOverride 1 0 0.5
+  }
+}
+TexturedBackgroundLight {
+}
+TexturedBackground {
+}
+TexturedBoxShape {
+  size 0.25 3 0.25
+  textureTransform TextureTransform {
+  }
+  faceColor 0 1 0.2
+}
+UR10e {
+  translation 0 1.5 0
+  controller "UR10_3D3PM"
+}
