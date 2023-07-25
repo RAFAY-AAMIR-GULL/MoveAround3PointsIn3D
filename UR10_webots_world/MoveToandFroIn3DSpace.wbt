@@ -12,12 +12,13 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.6922851097611552 -0.29763258562043804 -0.6573858614085627 1.6681452221651205
-  position -4.25661953768595 4.682341188983153 -5.313481295083637
+  orientation -0.3230857864514903 -0.6157602240689413 -0.7186479813146277 2.227769218244168
+  position 2.6792465435301964 2.5176698823345878 -4.840055450898076
 }
 RectangleArena {
-  translation 0 -0.03 0
-  floorSize 30 30
+  translation 0 -0.03 -1.47
+  rotation 1 0 0 -1.5707953071795862
+  floorSize 300 300
   floorAppearance Parquetry {
     colorOverride 1 0 1
   }
@@ -36,6 +37,7 @@ TexturedBoxShape {
   faceColor 0 1 0.2
 }
 UR10e {
-  translation 0 1.5 0
-  controller "UR10_3D3PM"
+  translation 0 1.5 1.0469e-12
+  rotation 1 0 0 -1.5707953071795862
+  controller "UR10"
 }
